@@ -6,22 +6,22 @@ An open-source simulation environment for multi-agent robotic systems — swarms
 
 ## Vision
 
-SwarmSim aims to provide a complete virtualized world for developing and testing coordinated autonomous systems. The simulation spans multiple domains:
+SwarmSim is a distributed, event-sourced simulation kernel for developing and testing coordinated autonomous systems. Rather than extending a game engine, SwarmSim treats the simulation fabric as the core and delegates rendering and physics to an open-source 3D engine as a presentation layer.
 
-- **Physical environment**: Newtonian dynamics with extensible terrain and environmental modeling
-- **Communication**: Inter-agent signaling across radio and optical channels
-- **Sensing**: Simulated sensor suites providing environmental telemetry to agents
-- **Control**: External command interfaces for low-level device actuation
-- **Extensibility**: Hook and plugin architecture for injecting and observing simulation state
+- **Simulation kernel**: Event-sourced world foundation with nanosecond-precision temporal modeling, built on distributed systems patterns
+- **Agents**: Individual and collective agent models operating as independent services with low-level device control
+- **Sensing & actuation**: Unified signal propagation framework covering sensors, actuators, and communication channels (including optical/LiFi)
+- **Extensibility**: Distributed architecture with service and schema versioning, hook APIs, and plugin points
 
 ## Future Directions
 
-- Geospatial terrain import
+- Geospatial terrain import and environmental condition modeling
 - Computational fluid dynamics integration (aerial and underwater vehicles)
+- SDK, scenario tooling, observability, and training gym integration
 
 ## Status
 
-**Pre-development.** Currently evaluating open-source 3D engines.
+**Pre-development.** Defining architecture and evaluating open-source 3D engines.
 
 ## License
 
